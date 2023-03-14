@@ -31,6 +31,10 @@ Notes
 DIV means a floored division. That means you round down after dividing.
 Return "Tie" if both men can afford the same amount of stuff.
 All numbers will be positive integers.
+coins: total money
+space: total space
+price: cost per unit
+size: space per unit
 */
 function whoWinsTonight(coins, space, price, size) {
   const backpack = Math.floor(space / size), wallet = Math.floor(coins / price);
