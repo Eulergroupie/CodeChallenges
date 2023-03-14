@@ -36,11 +36,12 @@ function arrIndex(lst, idx) {
 const arrIndex = (m, i) => i.reduce((s, x)=>s + m.flat()[x - 1], '');
 
  // Testing
-arr = [
+const arr = [
   ["m", "u", "b"],
   ["a", "s", "h"],
   ["i", "r", "1"]
-]
+];
 
-idx = [1, 3, 5, 8]
- console.log(arrIndex(arr, idx));
+const idx = [1, 3, 5, 8];
+
+console.log(arrIndex(arr, idx));
