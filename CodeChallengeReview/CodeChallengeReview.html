@@ -11,10 +11,40 @@
     <h1>Code Challenge Review 2023</h1>
     <section>
         <h2>CodeWars 8kyu</h2>
+        <section>
+            <h3>ASCIITotal.js</h3>
+            <p>Given a string return the sum of all character ASCII values as an integer.</p>
+<pre>
+function uniTotal(s) { 
+    if(typeof(s) !== 'string')
+        return null;
+                  
+    return [...s].reduce((t, c) => t + c.charCodeAt(0), 0);
+}</pre>     <p>It is good practice to check inputs to a function with type checks.
+            The last line splits the string into a character array and uses the 
+            iterator function <i>reduce</i> to add up the character codes.            
+            </p>
+        </section>
+        <section>
+            <h3>BasicMathematicalOperations.js</h3>
+            <p>uneventful</p>
+        </section>
+        <section>
+            <h3>FindTheFirstNonConsecutiveNumber.js</h3>
+            <p></p>
+<pre>function firstNonConsecutive (arr) {
+    let len = arr ? arr.length : 0;  // assign length based on the existence of the given array
+    if(len > 1)                      // if there are 2 or more elements...
+      for(let i = 1; i < len; i++)  // loop thru input array starting with 2nd element
+        if(arr[i] !== arr[i - 1] + 1)  // ensure the previous element was one less
+          return arr[i];  // non-consecutive!
+    
+    return null;  // didn't find anything non-consecutive
+  }</pre>
+            <p></p>
+        </section>
         <ul>
-            <li>ASCIITotal.js</li>
-            <li>BasicMathematicalOperations.js</li>
-            <li>FindTheFirstNonConsectutiveNumber.js</li>
+            
             <li>GetTheMeanOfAnArray.js</li>
             <li>HowGoodAreYouReally.js</li>
             <li>ReturnTwoHighestValuesInList.js</li>

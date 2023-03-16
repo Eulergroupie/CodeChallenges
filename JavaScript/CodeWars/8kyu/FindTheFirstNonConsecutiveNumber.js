@@ -23,13 +23,13 @@ but you can write your own example test. )
 */
 
 function firstNonConsecutive (arr) {
-  let len = arr ? arr.length : 0;
+  let len = arr ? arr.length : 0;  // assign length based on the existence of the given array
   if(len > 1) 
-    for(let i = 1; i < len; i++) 
-      if(arr[i] !== arr[i - 1] + 1)
-        return arr[i];
+    for(let i = 1; i < len; i++)  // loop thru input array starting with 2nd element
+      if(arr[i] !== arr[i - 1] + 1)  // ensure the previous element was one less
+        return arr[i];  // non-consecutive!
   
-  return null;
+  return null;  // didn't find anything non-consecutive
 }
 
 console.log(firstNonConsecutive([1,2,3,4,6,7,8]) === 6 ? 'Pass' : 'Fail');

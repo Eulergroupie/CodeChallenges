@@ -3,3 +3,23 @@ body {
     color: #999;
     font-size: 1.25em;
 }
+
+h1 {
+    color: darkgoldenrod;
+}
+
+h2 {
+    color: darkgreen;
+}
+
+h3 {
+    color: dodgerblue;
+}
+
+p {
+    color: darkkhaki;
+}
+
+pre {
+    color: darkcyan;
+}
