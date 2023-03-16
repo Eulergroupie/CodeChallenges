@@ -23,7 +23,7 @@ but you can write your own example test. )
 */
 
 function firstNonConsecutive (arr) {
-  let len = arr ? arr.length : 0;  // assign length based on the existence of the given array
+  const len = arr ? arr.length : 0;  // assign length based on the existence of the given array
   if(len > 1) 
     for(let i = 1; i < len; i++)  // loop thru input array starting with 2nd element
       if(arr[i] !== arr[i - 1] + 1)  // ensure the previous element was one less
