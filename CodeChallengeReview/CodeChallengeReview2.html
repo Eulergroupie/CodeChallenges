@@ -18,7 +18,110 @@
     <h1>Code Challenge Review 2023</h1>
         <h2>CodeWars 7kyu</h2>
             <section>
-                <h3></h3>
+                <h3>CountTheDivisorsOfANumber.js</h3>
+                    <p>Count the number of divisors of a positive integer n.</p>
+<pre>
+    function getDivisors(n) {
+        let r = [];
+        for(let i = 1; i <= (n/2); i++) 
+          if(n % i == 0) 
+            r.push(i);
+        r.push(n);
+        return r;
+    }
+      
+    function getDivisorsCnt(n) {
+        let r = 0;
+        for(let i = 1; i <= (n/2); i++) 
+          if(n % i == 0) 
+            r++;
+        return ++r;
+    }
+</pre>
+                <p>Listing the divisors and counting the divisors use the same process of 
+                dividing by every positive integer and checking for remainders.
+                </p>
+            </section>
+            <section>
+                <h3>DescendingOrder.js</h3>
+                    <p>Given a non-negative integer, return the same number with its digits
+                    in descending order.
+                    </p>
+<pre>
+    const descendingOrder = n => Number([...`${n}`].sort().reverse().join(''));</pre>
+                <p>Convert the number to a string and then an array of characters. Sort in 
+                ascending order, then reverse it and convert it back into a string and 
+                finally a number.
+                </p>
+            </section>
+            <section>
+                <h3>EvenNumbersInAnArray.js</h3>
+                    <p></p>
+<pre></pre>
+                <p></p>
+            </section>
+            <section>
+                <h3>FindTheNextPerfectSquare.js</h3>
+                    <p></p>
+<pre></pre>
+                <p></p>
+            </section>
+            <section>
+                <h3>GetNames.js</h3>
+                    <p></p>
+<pre></pre>
+                <p></p>
+            </section>
+            <section>
+                <h3>GrowthOfAPopulation.js</h3>
+                    <p></p>
+<pre></pre>
+                <p></p>
+            </section>
+            <section>
+                <h3>LastSurvivor.js</h3>
+                    <p></p>
+<pre></pre>
+                <p></p>
+            </section>
+            <section>
+                <h3>MinimizeSumOfArray.js</h3>
+                    <p></p>
+<pre></pre>
+                <p></p>
+            </section>
+            <section>
+                <h3>ShadesOfGrey.js</h3>
+                    <p></p>
+<pre></pre>
+                <p></p>
+            </section>
+            <section>
+                <h3>ShortestWord.js</h3>
+                    <p></p>
+<pre></pre>
+                <p></p>
+            </section>
+            <section>
+                <h3>SortNumbers.js</h3>
+                    <p></p>
+<pre></pre>
+                <p></p>
+            </section>
+            <section>
+                <h3>SquareEveryDigit.js</h3>
+                    <p></p>
+<pre></pre>
+                <p></p>
+            </section>
+            <section>
+                <h3>TwoToOne.js</h3>
+                    <p></p>
+<pre></pre>
+                <p></p>
+            </section>
+            <section>
+                <h3>WaitingRoom.js</h3>
                     <p></p>
 <pre></pre>
                 <p></p>
