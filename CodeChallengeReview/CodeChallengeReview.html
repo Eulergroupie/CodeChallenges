@@ -8,27 +8,37 @@
     <title>Code Challenge Review 2023</title>
 </head>
 <body>
+    <nav>
+        <div id="navbar">
+          <a class='active' href="CodeChallengeReview.html">home</a>
+          <a href="./CodeChallengeReview2.html">page 2</a>
+          <!--<a href="./resources.html">references</a>-->
+        </div>
+    </nav>
     <h1>Code Challenge Review 2023</h1>
         <h2>CodeWars 8kyu</h2>
-        <section>
-            <h3>ASCIITotal.js</h3>
-            <p>Given a string return the sum of all character ASCII values as an integer.</p>
+            <section>
+                <h3>ASCIITotal.js</h3>
+                    <p>Given a string return the sum of all character ASCII values as an integer.</p>
+
 <pre>function uniTotal(s) { 
     if(typeof(s) !== 'string')
         return null;
                   
     return [...s].reduce((t, c) => t + c.charCodeAt(0), 0);
 }</pre>
-            <p>It is good practice to check inputs to a function with type checks.
-            The last line splits the string into a character array and uses the 
-            iterator function <i>reduce</i> to add up the character codes.            
-            </p>
-        </section>
-        <section>
-            <h3>FindTheFirstNonConsecutiveNumber.js</h3>
-            <p>Find the first element of an array that is a non-consecutive integer, otherwise
-                return <i>null</i>.
-            </p>
+
+                    <p>It is good practice to check inputs to a function with type checks.
+                    The last line splits the string into a character array and uses the 
+                    iterator function <i>reduce</i> to add up the character codes.            
+                    </p>
+            </section>
+            <section>
+                <h3>FindTheFirstNonConsecutiveNumber.js</h3>
+                    <p>Find the first element of an array that is a non-consecutive integer, otherwise
+                    return <i>null</i>.
+                    </p>
+
 <pre>function firstNonConsecutive (arr) {
     const len = arr ? arr.length : 0;  // assign length based on the existence of the given array
     if(len > 1)                      // if there are 2 or more elements...
@@ -38,24 +48,28 @@
     
     return null;  // didn't find anything non-consecutive
 }</pre>
-            <p>The first line handles undefined inputs and empty arrays. The second line handles
-                single element arrays. A simple <i>for</i> loop stepping through the array while
-                looking back a step works well here because you can easily start on the second 
-                element (avoiding an index error by looking back on the first element). 
-            </p>
-        </section>
-        <section>
-            <h3>ReturnTwoHighestValuesInList.js</h3>
-            <p>Find the two distinct highest values in a list. Return as a list from highest to lowest</p>
+
+                    <p>The first line handles undefined inputs and empty arrays. The second line handles
+                    single element arrays. A simple <i>for</i> loop stepping through the array while
+                    looking back a step works well here because you can easily start on the second 
+                    element (avoiding an index error by looking back on the first element). 
+                    </p>
+            </section>
+            <section>
+                <h3>ReturnTwoHighestValuesInList.js</h3>
+                    <p>Find the two distinct highest values in a list. Return as a list from highest to lowest</p>
+
 <pre>
 const twoHighest = r => [...new Set(r.sort((a,b) => b - a))].slice(0,2);
 </pre>
-            <p>Sort the list in descending order, and place it in a set to remove duplicates.
-                Then turn it back into a list containing only the first two values.</p>
-        </section>
-        <section>
-            <h3>SumOfPositive.js</h3>
-            <p>Find each positive value in a list and return the sum.</p>
+
+                    <p>Sort the list in descending order, and place it in a set to remove duplicates.
+                    Then turn it back into a list containing only the first two values.</p>
+            </section>
+            <section>
+                <h3>SumOfPositive.js</h3>
+                    <p>Find each positive value in a list and return the sum.</p>
+
 <pre>
 // C-style
 function positiveSum(arr) {
@@ -77,6 +91,7 @@ function positiveSum(arr) {
 // reduce lives up to its name
 const positiveSum = arr => arr.reduce((sum, x) => sum + (x > 0 ? x : 0), 0);
 </pre>
-        </section>  
+
+            </section>  
 </body>
 </html>
