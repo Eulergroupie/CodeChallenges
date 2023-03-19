@@ -10,9 +10,6 @@ var data = [
   {name: 'Kate', age: 23}
 ]
 
-console.log(getNames(data)); // should return ['Joe', 'Bill', 'Kate']
+const getNames = data => data.map(x => x.name);
 
-function getNames(data) {
-  console.log(data.name, data.age);
-  return data.map(x => x.name);
-}
+console.log(getNames(data)); // should return ['Joe', 'Bill', 'Kate']
