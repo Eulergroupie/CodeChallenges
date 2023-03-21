@@ -16,9 +16,9 @@
         </div>
     </nav>
     <h1>Code Challenge Review 2023</h1>
-        <h2>CodeWars 8kyu</h2>
+        <h2>Notable code</h2>
             <section>
-                <h3>ASCIITotal.js</h3>
+                <h3>ASCIITotal.js from CodeWars 8kyu</h3>
                     <p>Given a string return the sum of all character ASCII values as an integer.</p>
 
 <pre>function uniTotal(s) { 
@@ -34,7 +34,7 @@
                     </p>
             </section>
             <section>
-                <h3>FindTheFirstNonConsecutiveNumber.js</h3>
+                <h3>FindTheFirstNonConsecutiveNumber.js from CodeWars 8kyu</h3>
                     <p>Find the first element of an array that is a non-consecutive integer, otherwise
                     return <i>null</i>.
                     </p>
@@ -56,7 +56,7 @@
                     </p>
             </section>
             <section>
-                <h3>ReturnTwoHighestValuesInList.js</h3>
+                <h3>ReturnTwoHighestValuesInList.js from CodeWars 8kyu</h3>
                     <p>Find the two distinct highest values in a list. Return as a list from highest to lowest</p>
 
 <pre>
@@ -67,7 +67,7 @@ const twoHighest = r => [...new Set(r.sort((a,b) => b - a))].slice(0,2);
                     Then turn it back into a list containing only the first two values.</p>
             </section>
             <section>
-                <h3>SumOfPositive.js</h3>
+                <h3>SumOfPositive.js from CodeWars 8kyu</h3>
                     <p>Find each positive value in a list and return the sum.</p>
 
 <pre>
@@ -91,7 +91,15 @@ function positiveSum(arr) {
 // reduce lives up to its name
 const positiveSum = arr => arr.reduce((sum, x) => sum + (x > 0 ? x : 0), 0);
 </pre>
-
+                    <p>This evolved from a C style of coding to JavaScript. The 
+                    <i>for</i> loop that keeps a running total
+                    checked by an <i>if</i> statement is a standard application of loops.
+                    Switching to an iterator function that mimicks the <i>for</i> loop and 
+                    a conditional statement instead of an <i>if</i>, seem like Javascript,
+                    but it's really a one-for-one replacement. Using the overall form of 
+                    a function as an object in the shape of an arrow function while also
+                    using the iterator specifically made for running sums makes the full
+                    transistion to Javascript style.  </p>
             </section>  
 </body>
 </html>

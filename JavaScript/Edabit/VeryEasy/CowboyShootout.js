@@ -27,7 +27,8 @@ function rogerShots(arr) {
     return sum;
 }
 */
-
+/* The following regex says: Bang, once or twice followed by an exclaimation mark; 
+    nothing before it, nothing after it. */
 const rogerShots = r => r.reduce((s, x) => s + (/^(Bang){1,2}!$/.test(x) ? 0.5 : 0), 0);
 
 console.log(rogerShots(["Bang!", "Bang!", "Bang!", "Bang!", "Bang!", "Bang!"]), 3)
