@@ -12,7 +12,7 @@ Input: 123456789 Output: 987654321
 
 */
 
-const descendingOrder = n => Number([...String(n)].sort().reverse().join(''));
+const descendingOrder = n => Number([...`${n}`].sort().reverse().join(''));
 
 // Testing
 console.log(descendingOrder(0));  // 0

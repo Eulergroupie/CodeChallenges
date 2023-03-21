@@ -11,12 +11,20 @@ For example:
 ([6, -25, 3, 7, 5, 5, 7, -3, 23], 1) => [6]
 */
 
-function evenNumbers(array, number) {
+/*function evenNumbers(array, number) {
   let result = [];
   for(let i = 0; i < array.length; ++i)
     if(!(array[i] & 1)) 
       result.push(array[i]);
   return result.slice(-number);
+}*/
+
+function evenNumbers(array, number) {
+  let result = [];
+  for(let i = array.length - 1; i >= 0 && result.length !== number; --i)
+    if(!(array[i] & 1)) 
+      result.unshift(array[i]);
+  return result;
 }
 
 // Testing

@@ -17,12 +17,15 @@ Note: if there is nothing to sum, the sum is default to 0.
   return sum;
 }*/
 
-// forEach with anonymous function
+/*// forEach with anonymous function
 function positiveSum(arr) {
   let sum = 0;
   arr.forEach(value => value > 0 ? sum += value : 0);
   return sum;
-}
+}*/
+
+// reduce lives up to its name
+const positiveSum = arr => arr.reduce((sum, x) => sum + (x > 0 ? x : 0), 0);
 
 
 // Testing

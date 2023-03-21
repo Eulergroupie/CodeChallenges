@@ -1,3 +1,4 @@
+// Find the mean of an array of numbers.
 function getAverage(marks){
   console.log(marks);
   return Math.floor(marks.reduce((sum, x) => sum + x) / marks.length);

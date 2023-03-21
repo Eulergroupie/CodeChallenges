@@ -7,18 +7,14 @@ examples:
 uniTotal("a") == 97 uniTotal("aaa") == 291
 */
 function uniTotal(s) {
-  let t;
-  if(typeof(s) == 'string')
-    t = 0;
-  else
+  if(typeof(s) !== 'string')
     return null;
 
-  for(let char of s)
-    t += char.charCodeAt(0);
-  return t;
+  return [...s].reduce((t, c) => t + c.charCodeAt(0), 0);
 }
 
 // Testing
-console.log(uniTotal());  // null
-console.log(uniTotal(''));  // 0
-console.log(uniTotal('a'));  // 97
+console.log(uniTotal() === null ? 'Pass' : 'Fail: ' + uniTotal());  // null
+console.log(uniTotal('') === 0 ? 'Pass' : 'Fail: ' + uniTotal(''));  // 0
+console.log(uniTotal('a') === 97 ? 'Pass' : 'Fail: ' + uniTotal('a'));  // 97
+console.log(uniTotal('aaa') === 291 ? 'Pass' : 'Fail: ' + uniTotal('aaa'));  // 291
