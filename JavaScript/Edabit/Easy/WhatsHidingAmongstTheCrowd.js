@@ -15,7 +15,9 @@ detectWord("bEEFGBuFBRrHgUHlNFYaYr") ➞ "burglar"
 
 detectWord("YFemHUFBbezFBYzFBYLleGBYEFGBMENTment") ➞ "embezzlement" */
 
-const detectWord = s => [...s].filter(c => c === c.toLowerCase()).join('');
+//const detectWord = s => [...s].filter(c => c === c.toLowerCase()).join('');
+
+const detectWord = s => s.replace(/[A-Z]/g, '');
 
 console.log(detectWord("UcUNFYGaFYFYGtNUH"), "cat")
 console.log(detectWord("bEEFGBuFBRrHgUHlNFYaYr"), "burglar")
