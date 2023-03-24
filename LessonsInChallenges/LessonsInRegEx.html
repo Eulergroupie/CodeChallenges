@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="./LessonsInRegEx.css">
+  <title>Lessons in RegEx</title>
+</head>
+<body>
+  <header>
+  <h1>Lessons in RegEx</h1>
+  </header>
+    <h2>Notable code from Regular-Expression related Challenges</h2>
+    <section>
+      <h3>Problem Title</h3>
+        <p>Problem</p>
+<pre>Code Solution</pre>
+        <p>Solution Discussion</p>
+        <ul>
+          <li><a href="" title="" target="_blank"></a></li>
+          <li><a href="" title="" target="_blank"></a></li>
+        </ul>
+    </section>
+      <section>
+        <h3>ConvertStringToCamelCase.js</h3>
+          <p>Complete the function so that it converts dash/underscore delimited 
+            words into camel casing. The first word within the output should be capitalized 
+            only if the original word was capitalized (known as Upper Camel Case, also 
+            often referred to as Pascal case). The next words should be always capitalized. <br><br>
+            
+            Examples <br>
+            "the-stealth-warrior" gets converted to "theStealthWarrior" <br>          
+            "The_Stealth_Warrior" gets converted to "TheStealthWarrior" <br>            
+            "The_Stealth-Warrior" gets converted to "TheStealthWarrior"</p>
+<pre title="turns a dash/underscore delimited string into camel case">
+const toCamelCase = s => s.replace(/[-_](.)/g, (_, c) => c.toUpperCase());</pre>
+          <p>The replace method can release the power of regex by allowing context 
+            grouping between arguments as well as using callback functions. Here, 
+            the dash/underscore gets identified globally along with the first character
+            following. That first character is identified as a capture group which is 
+            referred to by the input arguments to the callback function in replace's 
+            second argument. Ignoring the first bit of data from the capture group, 
+            the second piece of data is the character c, which is converted to uppercase
+            ultimately replacing the first letter following a dash/underscore.
+          </p>
+          <ul>
+            <li><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String/replace" title="MDN replace definition" target="_blank">replace method</a></li>
+            <li><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Guide/Regular_Expressions" title="MDN Regular Expression Introduction" target="_blank">regular expressions</a></li>
+          </ul>
+      </section>
+      <section>
+        <h3>Problem Title</h3>
+          <p>Problem</p>
+<pre>Code Solution</pre>
+          <p>Solution Discussion</p>
+          <ul>
+            <li><a href="" title="" target="_blank"></a></li>
+            <li><a href="" title="" target="_blank"></a></li>
+          </ul>
+      </section>
+</body>
+</html>
