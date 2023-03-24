@@ -13,9 +13,18 @@
   </header>
     <h2>Notable code from Regular-Expression related Challenges</h2>
     <section>
-      <h3>Problem Title</h3>
-        <p>Problem</p>
-<pre>Code Solution</pre>
+      <h3>RegexValidatePINCode.js</h3>
+        <p>ATM machines allow 4 or 6 digit PIN codes and PIN codes cannot contain 
+          anything but exactly 4 digits or exactly 6 digits.
+          
+          If the function is passed a valid PIN string, return true, else return false.
+          <br><br>
+          Examples (Input --> Output) <br>
+          "1234"   -->  true <br>
+          "12345"  -->  false <br>
+          "a234"   -->  false</p>
+<pre title="is the pin exactly 4 or 6 digits?">
+const validatePIN = pin => /^\d{4}$|^\d{6}$/.test(pin);</pre>
         <p>Solution Discussion</p>
         <ul>
           <li><a href="" title="" target="_blank"></a></li>
