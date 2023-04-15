@@ -16,9 +16,9 @@ Notes
 No two durations will be the same. 
 */
 
-function longestTime(h, m, c) {
+function longestTime(h, m, s) {
 	const [a, b] = [(h * 3600), (m * 60)];
-    return [h, m, c][(b>=a && b>=c) + 2*(c>=a && c>=b)];
+    return [h, m, s][(b>=a && b>=s) + 2*(s>=a && s>=b)];
 }
 
 console.log(longestTime(1, 59, 3598), 1)
